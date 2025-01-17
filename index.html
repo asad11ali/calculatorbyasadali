@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +7,31 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>ADD AWESOME BOOKS</title>
+    <title>Calculator by Asad Ali</title>
 </head>
-
+    <div class="calculator">
+        <input type="text" name="" id="inputField">
+      <div class="button">
+        <button class="inputText operator" onclick="display('+')">+</button>
+        <button class="inputText" onclick="display('7')">7</button>
+        <button class="inputText" onclick="display('8')">8</button>
+        <button class="inputText" onclick="display('9')">9</button>
+        <button class="inputText operator" onclick="display('-')">-</button>
+        <button class="inputText" onclick="display('4')">4</button>
+        <button class="inputText" onclick="display('5')">5</button>
+        <button class="inputText" onclick="display('6')">6</button>
+        <button class="inputText operator" onclick="display('*')">*</button>
+        <button class="inputText" onclick="display('1')">1</button>
+        <button class="inputText" onclick="display('2')">2</button>
+        <button class="inputText" onclick="display('3')">3</button>
+        <button class="inputText operator" onclick="display('/')">/</button>
+        <button class="inputText" onclick="display('0')">0</button>
+        <button class="inputText" onclick="display('.')">.</button>
+        <button class="inputText" onclick="calculate()">=</button>
+        <button class="inputText operator" onclick="clearDisplay()">C</button>
+      </div>
+    </div>
 <body>
-    <!--NAV BAR-->
-    <div class="nav">
-        <div class="logo"><h3>Awesome Books</h3></div>
-        <div class="navlinks">
-            <a href="index.html">Add a new book</a>
-            <a href="display.html">All awesome books</a>
-            <a href="edit.html">Edit awesome books</a>
-            <a href="contact.html">Contact Us</a>
-        </div>
-    </div>
-    <!--NAV BAR-->
-    <div class="container">
-        <h1>MY AWESOME BOOKS LIST</h1>
-        <input type="text" placeholder="Book Name" id="bookField">
-        <input type="text" placeholder="Author" id="authorField">
-        <button id="add">Add</button>
-        <table id="" class="hide">
-            <tr class="heading">
-                <td class="heading-tr">NO.</td>
-                <td class="heading-tr">NAME</td>
-                <td class="heading-tr">AUTHOR</td>
-                <td class="heading-tr">ACTIONS</td>
-            </tr>
-        </table>
-        <table id="records" class="hide">
-        </table>
-    </div>
     <script src="script.js"></script>
 </body>
 
